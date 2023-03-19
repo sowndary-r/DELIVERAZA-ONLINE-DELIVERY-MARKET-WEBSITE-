@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+    $('#hello').hide();
+    $('#hello').fadeToggle(1000);  
+    $('#reg').hide();
+    $('#reg').delay(1000).fadeToggle(1000);  
+    $('.head').hide();
+    $('.head').fadeToggle(1000);  
+});
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="register.js"></script>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="left">
+            <div class="gradient-text">
+                <h2 id="hello">HELLO!</h2>
+                <h3 id="reg">Register here to make orders!!</h3><br>
+            </div>
+               <div class="form-group">
+               <form action="/index/?signin=1" method="POST">
+                <div class="col-md-12 text-center">
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" style="width:300px;" required>
+                    <br>
+                    
+                    <input class="form-control" type="text" name="address" id="address" placeholder="Enter your address" style="width:300px;" required><br>
+    
+                    <input class="form-control" type="text" name="phone" id="phone" placeholder="Enter your Phone no" style="width:300px;" required><br>
+    
+                    
+                    <button type="submit" class="text-center">GET IN</button>
+                   
+                </div>
+                   
+               </form>
+              
+           </div>
+           </div>
+         </div>
+<div class="maindiv"> 
+    <div class="right">
+        <h1 class="head">WELCOME!!</h1>
+        <div class="login">A right website to make and place your order and get a quicker delivery</div>
+      
+        
+    </div>
+</div>
+   
+</body>
+</html>

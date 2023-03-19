@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDERING MARKET</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+    
+       <a href="/admin">ADMIN</a>
+       <a href="/orderdetails">ORDER NOW</a> 
+    </div>
+    <h2 style="color:darkblue">SELECT SHOP YOU WANT TO PURCHASE</h2>
+    <select name="shops" id="shops">
+        <option value="" class="option">ABC supermarket</option>
+    </select>
+    <h1 id="head">FEEL FREE TO ORDER!!</h1>
+    <div class="wrapper">
+        
+        <h2  id="head">AVAILABLE PRODUCTS</h2>
+   
+        <% item.forEach((item)=>{ %>
+            <form action="/order/?order_id=<%= item.item%>" method="POST">
+                <li><%= item.item %> - <%= item.cost %> <%= item.quantity %> (available- <%= item.stock %> kg)</li><br>
+                <input type="number" name="quantity" placeholder="Enter the quantity" required> 
+                <!--<a href="/dashboard/?order_id=<%= item._id %>">ORDER NOW</a> -->
+                <button onclick="submit">ORDER NOW</button><br><br>
+            </form>
+            
+        <% }) %>
+        
+    
+    </div>
+    
+   
+</body>
+</html>

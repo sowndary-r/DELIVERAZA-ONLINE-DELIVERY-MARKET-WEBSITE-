@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered items</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/order.js"></script>
+   
+</head>
+<body>
+    <div class="navbar">
+    
+        <a href="/admin">ADMIN</a>
+        <a href="/index">HOME</a>
+     </div>
+    
+     <div id="head1">
+        <h1 id="h1" style="text-align:center">Order confirmation</h1>
+       
+    </div>
+       
+  <div class="box">
+    <h1 style="color :rgb(5, 4, 4)">Enter the Details!!</h1>
+    
+    <div class="form">
+        <input type="text" placeholder="Enter your Name" id="name" required><br><br>
+        <input type="text"  placeholder="Enter your Adress" id="adress" name="adress"> &nbsp; &nbsp; &nbsp;<br><br>
+        <input type="number" id="phone" placeholder="Enter your phone no"><br><br>
+      <label >DOOR DELIVERY</label><input type="radio" class="radio" value="DOOR DELIVERY" name="deliveryoption">
+      <label >SHOP DELIVERY</label><input type="radio" class="radio" value="SHOP DELIVERY" name="deliveryoption">
+       <h3>click below to ensure your order</h3>
+       <button onclick="delivery()">PLACE ORDER</button>
+    </div>
+    <br>
+   <div id="result"></div>
+       
+</body>
+</html>

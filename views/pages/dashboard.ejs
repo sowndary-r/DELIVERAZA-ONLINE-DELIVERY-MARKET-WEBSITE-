@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+    
+        <a href="/admin">ADMIN</a>
+        <a href="/index">HOME</a>
+     </div>
+     <div class="displayright" style="border:2px solid skyblue;">
+        <h2 class="head">INSERT ITEMS</h2>
+    
+        <% if(edit_product) { %>
+            <form action="/update" method="POST">
+                
+                <input class="in" type="text" name="item" placeholder="Enter item" value="<%= edit_product.item %>" required>
+                <input class="in" type="number" name="cost" placeholder="Enter cost" value="<%= edit_product.cost%>" required>
+                <input class="in" type="text" name="quantity" placeholder="Enter quantity" value="<%= edit_product.quantity %>" required>
+                <input class="in" type="number" name="stock" placeholder="Enter stock" value="<%= edit_product.stock %>" required><br><br>
+                <input class="in" type="submit" value="UPDATE ITEM" >
+            </form>
+        
+        <% } else { %>
+        <form action="/dashboard" method="POST">
+           
+            <input type="text" name="item" placeholder="Enter item"  required><br><br>
+            <input type="number" name="cost" placeholder="Enter cost" required><br><br>
+            <input type="text" name="quantity" placeholder="Enter quantity" required><br><br>
+            <input type="number" name="stock" placeholder="Enter stock" required><br><br>
+            <input type="submit" value="ADD ITEM" style="width:150px;background-color: darkblue;margin-bottom: 20px;padding-left: 5px;
+            padding-right: 10px;">
+        </form>
+        <% } %>
+     </div>
+    
+  
+    <div class="displayright" style="border:2px solid skyblue;margin-left:40px;padding-left: 5px;
+    padding-right: 10px;">
+        
+        <h2 class="head">PRODUCTS</h2>
+      
+        <% products.forEach((item)=>{ %>
+            <ul>
+                <li><%= item.item %> - <%= item.cost %> <%= item.quantity %> (available- <%= item.stock %> kg)</li><br><a href="/dashboard/?edit_id=<%= item.item %>"><input type="submit" id="update" value="update"></a>&nbsp;&nbsp;<a href="/dashboard/?delete_id=<%= item.item %>" onclick="return confirm('are you sure you want to delete the item')"><input type="submit" id="delete" value="delete"></a>
+              
+            </ul>
+            
+        <% }) %>
+    </div>
+     
+
+    <div class="displayright" style="border:2px solid skyblue;margin-left:40px">
+        <h2 class="head">ORDERS</h2>
+        <% orders.forEach((item)=>{ %>
+            <ul>
+                <li><%= item.product %> - <%= item.quantity %> kg ordered by <%= item.name %> delivery address :<%= item.address %> <br><br><a href="/dashboard/?delivered_id=<%= item._id %>"><input type="submit" id="delbtn" value="delivered"></a>
+              
+            </ul>
+            
+        <% }) %>
+    </div>
+    
+</body>
+</html>

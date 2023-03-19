@@ -1,0 +1,114 @@
+input{
+    
+    width: 250px;
+    border:none;
+    box-shadow: none;
+    height: 40px;
+    background-color: #03A9F4;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.head{
+    background-color: red;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar{
+    height:40px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+#delbtn{
+    width: 250px;
+    border:none;
+    box-shadow: none;
+    height: 40px;
+    background-color:darkblue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#update{
+    width: 70px;
+    border:none;
+    box-shadow: none;
+    height: 30px;
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+   
+    letter-spacing: 1.3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#delete{
+    width: 70px;
+    border:none;
+    box-shadow: none;
+    height: 30px;
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+   
+    letter-spacing: 1.3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.displayright{
+    float: left;
+    margin-top: 20px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+   margin-top:20px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+   
+}
+
+.in{
+    width: 150px;
+    border:none;
+    box-shadow: none;
+    height: 40px;
+    background-color: #03A9F4;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+li{
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue;
+font-weight: bolder;
+}

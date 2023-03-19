@@ -1,0 +1,113 @@
+
+body{
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:250px,auto;
+    padding:10px 10px 30px;
+    background: #ecf0f3;
+}
+
+.navbar{
+    height:40px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.wrapper{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+     margin-top:20px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    padding : 20px 20px 20px 20px;
+    color:darkblue;
+    border: 2px solid skyblue;
+   
+}
+input{
+    height:35px;
+    width:200px;
+    border-radius:5px;
+    border: none;
+ }
+.navbar a{
+    float:right;
+    font-size: 16px;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+form{
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: darkblue;
+    color:white
+}
+button{
+    width: 100px;
+    height:35px;
+    align-items: center;
+     text-align: center;
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+     border-radius:5px;
+   
+     font-weight:bolder;
+     padding: 5px;
+     letter-spacing: 1px;
+     border: none;
+     color:white;
+ }
+ 
+ #shops{
+    width: 200px;
+    height:35px;
+    margin-top:15px;
+    align-items: center;
+     text-align: center;
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+     border-radius:5px;
+   
+     font-weight:bolder;
+     padding: 5px;
+     letter-spacing: 1px;
+     border: none;
+     color:white;
+ }
+ li{
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue;
+font-weight: bolder;
+}
+input{
+    text-align: center;
+}
+#head{
+    text-align: center;
+    text-decoration: underline;
+    background-color: red;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+img{
+    height: 180px;
+    margin-left: 30px;
+    padding:10px;
+}
